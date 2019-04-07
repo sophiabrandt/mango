@@ -2,3 +2,8 @@
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '../node_modules/font-awesome/css/font-awesome.css';
+
+.navbar-brand img {
+  width: 35px;
+  height: 35px;
+}
