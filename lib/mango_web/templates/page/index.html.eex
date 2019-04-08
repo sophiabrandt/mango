@@ -1,11 +1,12 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Mango" %></h1>
-  <h1>Seasonal products</h1>
+<section class="page-title">
+  <h1>Seasonal Products</h1>
 </section>
 
 <section class="row">
-  <article class="column">
-  </article>
-  <article class="column">
-  </article>
+  <%= for product <- @seasonal_products do %>
+    <div class="product">
+      <div class="product-name"><%= product.name %></div>
+      <div>INR <span class="product-price"><%= product.price %></span></div>
+    </div>
+  <% end %>
 </section>
