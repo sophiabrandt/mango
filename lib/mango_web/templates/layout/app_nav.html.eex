@@ -1,17 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="/images/logo.png"></a>
+    <a class="navbar-brand" href="#"><img src="/images/logo.png"> Mango</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-nav" aria-controls="primary-nav-markup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="primary-nav">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Mango</a>
-        <a class="nav-item nav-link" href="#">Fruits</a>
-        <a class="nav-item nav-link" href="#">Vegetables</a>
-        <a class="nav-item nav-link" href="#">Recipes</a>
-        <a class="nav-item nav-link" href="#">About</a>
-      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item nav-link"><%= link "Fruits", to: Routes.category_path(@conn, :show, "fruits") %></li>
+        <li class="nav-item nav-link"><%= link "Vegetables", to: Routes.category_path(@conn, :show, "vegetables") %></li>
+      </ul>
     </div>
   </div>
 </nav>

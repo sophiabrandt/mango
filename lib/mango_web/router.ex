@@ -17,6 +17,7 @@ defmodule MangoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/categories/:name", CategoryController, :show
   end
 
   # Other scopes may use custom stacks.

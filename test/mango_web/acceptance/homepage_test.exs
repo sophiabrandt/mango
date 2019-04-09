@@ -1,4 +1,4 @@
-defmodule MoangoWeb.HomepageTest do
+defmodule MangoWeb.HomepageTest do
   use ExUnit.Case
   use Hound.Helpers
 

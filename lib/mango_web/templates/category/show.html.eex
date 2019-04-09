@@ -1,0 +1,12 @@
+<section class="page-title">
+  <h1><%= title_case @name %></h1>
+</section>
+
+<section class="row">
+  <%= for product <- @products do %>
+      <div class="product">
+          <div class="product-name"><%= product.name %></div>
+          <div>INR <span class="product-price"><%= product.price %></span></div>
+      </div>
+  <% end %>
+</hp>
