@@ -7,3 +7,11 @@
   width: 35px;
   height: 35px;
 }
+
+.nav-link > a {
+  color: #ec5d57;
+}
+
+h1 {
+  color: #ec5d57;
+}
