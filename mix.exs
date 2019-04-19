@@ -43,7 +43,8 @@ defmodule Mango.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:hound, "~> 1.1"}
+      {:hound, "~> 1.1"},
+      {:nimble_csv, "~> 0.6.0"}
     ]
   end
 
