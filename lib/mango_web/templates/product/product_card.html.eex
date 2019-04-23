@@ -1,0 +1,13 @@
+<div class="product card" style="margin-bottom: 2rem;">
+  <div class="caption">
+    <span class="text-muted float-right card-text"><%= @product.pack_size %></span>
+    <h2>
+      <div class="product-name card-title"><%= @product.name %></div>
+      <span class="float-right">
+        <small class="product-price card-text">₹ <%= @product.price %></small>
+      </span>
+    </h2>
+    <hr/>
+  </div>
+  <img class="card-img-bottom" src="<%= @product.image %>" alt="<%= @product.name %>" />
+</div>
