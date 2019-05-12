@@ -15,3 +15,13 @@
 h1 {
   color: #ec5d57;
 }
+
+.btn-primary {
+  background-color: #ec5d57;
+  border-color: #ec5d57;
+}
+
+.btn-primary:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
