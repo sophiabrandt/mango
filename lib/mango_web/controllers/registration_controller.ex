@@ -6,4 +6,8 @@ defmodule MangoWeb.RegistrationController do
     changeset = CRM.build_customer()
     render(conn, "new.html", changeset: changeset)
   end
+
+  def create(conn, %{"registration" => registration_params}) do
+    # new code
+  end
 end
