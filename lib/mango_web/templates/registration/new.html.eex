@@ -1,5 +1,12 @@
 <h1>Register account</h1>
 <%= form_for @changeset, Routes.registration_path(@conn, :create), [as: :registration, id: "registration-form"], fn f -> %>
+
+  <%= if @changeset.action do %>
+  <div id="form-error" class="alert alert-danger">
+    <p>Oops, something went wrong! Please check the errors below.</p>
+  </div>
+  <% end %>
+
   <div class="form-group">
     <%= label f, :name, class: "control-label" %>
     <%= text_input f, :name, class: "form-control" %>
