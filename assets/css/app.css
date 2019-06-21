@@ -25,3 +25,14 @@ h1 {
   background-color: #dc3545;
   border-color: #dc3545;
 }
+
+/* Phoenix flash messages */
+.alert:empty {
+  display: none;
+}
+
+/* Phoenix inline forms in links and buttons */
+form.link,
+form.button {
+  display: inline;
+}
