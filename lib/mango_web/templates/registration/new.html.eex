@@ -26,8 +26,7 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :residence_area, "Area of Residence", class: "control-label" %>
-    <%= text_input f, :residence_area, class: "form-control" %>
+    <%= select f, :residence_area, @residence_areas, prompt: "Residence Area", class: "control-label dropdown btn btn-secondary dropdown-toggle" %>
     <%= error_tag f, :residence_area %>
   </div>
 
