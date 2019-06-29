@@ -43,3 +43,9 @@ npm-debug.log
 
 # ctags
 tags
+
+# elixir-ls
+.elixir_ls/
+
+# VS Code
+.vscode/
