@@ -8,6 +8,11 @@
       </span>
     </h2>
     <hr/>
+    <%= form_for @conn, "/cart", [as: :cart], fn f -> %>
+      <%= hidden_input f, :product_id, value: @product.id %>
+      <%= number_input f, :quantity, value: 1  %>
+      <%= submit "Add to cart" %>
+    <% end %>
   </div>
   <img class="card-img-bottom" src="<%= @product.image %>" alt="<%= @product.name %>" />
 </div>
