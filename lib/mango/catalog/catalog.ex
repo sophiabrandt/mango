@@ -1,6 +1,11 @@
 defmodule Mango.Catalog do
+  @moduledoc """
+  API boundary for the Catalog system.
+  """
   alias Mango.Catalog.Product
   alias Mango.Repo
+
+  def get_product!(id), do: Product |> Repo.get!(id)
 
   def list_products do
     Product

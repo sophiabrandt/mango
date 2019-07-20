@@ -4,7 +4,7 @@
     <h2>
       <div class="product-name card-title"><%= @product.name %></div>
       <span class="float-right">
-        <small class="product-price card-text">₹ <%= @product.price %></small>
+        <small>₹ </small><small class="product-price card-text"><%= @product.price %></small>
       </span>
     </h2>
     <hr/>
