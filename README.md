@@ -115,7 +115,7 @@ See `LICENCE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Sophia Brand - [@hisophiabrandt](https://twitter.com/hisophiabrandt)
+Sophia Brandt - [@hisophiabrandt](https://twitter.com/hisophiabrandt)
 
 Project Link: [https://github.com/sophiabrandt/mango](https://github.com/sophiabrandt/mango)
 
