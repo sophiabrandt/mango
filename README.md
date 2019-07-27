@@ -80,14 +80,28 @@ Please make sure to install [Phoenix and its dependencies](https://hexdocs.pm/ph
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To start your Phoenix server:
+1. To start your Phoenix server:
+
 ```sh
 mix phx.server
 ``````
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+2. To run the tests:
+
+```sh
+phantomjs --wd
+```
+Then:
+```sh
+mix test
+```
+
+3. Production
+
 Ready to run in production? Please [check the deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+
 
 ## Learn more
 
