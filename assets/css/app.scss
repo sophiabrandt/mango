@@ -1,7 +1,8 @@
 /* This file is for your main application css. */
 
-@import '../node_modules/bootstrap/dist/css/bootstrap.css';
-@import '../node_modules/font-awesome/css/font-awesome.css';
+$fa-font-path: '~font-awesome/fonts';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~font-awesome/scss/font-awesome.scss';
 
 .navbar-brand img {
   width: 35px;
