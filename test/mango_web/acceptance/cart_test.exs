@@ -61,9 +61,9 @@ defmodule MangoWeb.Acceptance.CartTest do
     |> click
 
     message =
-      find_element(:css, ".alert-success")
+      find_element(:css, ".mb-0")
       |> visible_text()
 
-    assert message =~ "Product added to cart - #{product_name} (#{pack_size}) x 2 qty"
+    assert message =~ "Product added to cart : #{product_name} (#{pack_size}) x 2"
   end
 end

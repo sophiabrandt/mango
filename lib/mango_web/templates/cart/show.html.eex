@@ -37,7 +37,7 @@
       </tbody>
     </table>
     <div class="form-group">
-      <%= submit "Update Cart", class: "btn btn-primary" %>
+      <%= submit "Update Cart", class: "btn btn-danger" %>
     </div>
   <% end %>
 <% end %>
