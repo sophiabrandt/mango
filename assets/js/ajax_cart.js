@@ -16,7 +16,6 @@ function ajaxHandler(e) {
       type: 'success',
     })
     $('.cart-count').text(response.cart_count)
-    console.log('bootstrap notify called?')
   })
 }
 
