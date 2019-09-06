@@ -6,7 +6,7 @@ defmodule MangoWeb.CartView do
     %{"product_name" => name, "pack_size" => size, "quantity" => qty} = cart_params
 
     %{
-      message: "Product added to cart - #{name} (#{size}) x {#qty} qty",
+      message: "Product added to cart : #{name} (#{size}) x #{qty}",
       cart_count: cart_count(cart)
     }
   end
