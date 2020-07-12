@@ -57,6 +57,7 @@ Please see [shankardevy/mango][shankarmango] for further details.
 - [Phoenix 1.4][phoenixframework]
 - [Bootstrap](https://getbootstrap.com)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Docker](https://www.docker.com/)
 
 <!-- GETTING STARTED -->
 
@@ -66,7 +67,7 @@ Please see [shankardevy/mango][shankarmango] for further details.
 
 This project uses [Phoenix 1.4][phoenixframework], the web framework for the Elixir language.
 
-Please make sure to install [Phoenix and its dependencies](https://hexdocs.pm/phoenix/installation.html#content).
+Please make sure to install [Phoenix and its dependencies](https://hexdocs.pm/phoenix/installation.html#content). I use [asdf](https://alchemist.camp/episodes/asdf-language-versions).
 
 The project uses [Docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/install/) for setting up a Postgres database.
 
@@ -97,39 +98,39 @@ git clone https://github.com/sophiabrandt/mango.git
 
 1. Start the Postgres database:
 
-    ```bash
-    docker-compose up -d
-    ```
-    
-    Create and migrate your database:
-    ```bash
-    mix ecto.setup
-    ```
+   ```bash
+   docker-compose up -d
+   ```
 
+   Create and migrate your database:
 
-2. To start your Phoenix server:
+   ```bash
+   mix ecto.setup
+   ```
 
-    ```bash
-    mix phx.server
-    ```
+2) To start your Phoenix server:
 
-    Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+   ```bash
+   mix phx.server
+   ```
 
-3. To run the tests:
+   Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-    ```sh
-    phantomjs --wd
-    ```
-    
-    Then:
-    
-    ```sh
-    mix test
-    ```
+3) To run the tests:
 
-4. Production
+   ```sh
+   phantomjs --wd
+   ```
 
-    Ready to run in production? Please [check the deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+   Then:
+
+   ```sh
+   mix test
+   ```
+
+4) Production
+
+   Ready to run in production? Please [check the deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
 
