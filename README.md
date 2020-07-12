@@ -1,10 +1,9 @@
 <!-- PROJECT SHIELDS -->
 <!--
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![MIT License][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -29,24 +28,24 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 This repo mirrors my progress on **[Mastering Phoenix Framework][phoenixbook]** by Shankar Dhanasekaran.
@@ -54,69 +53,100 @@ This repo mirrors my progress on **[Mastering Phoenix Framework][phoenixbook]** 
 Please see [shankardevy/mango][shankarmango] for further details.
 
 ### Built With
-* [Phoenix 1.4][phoenixframework]
-* [Bootstrap](https://getbootstrap.com)
-* [PostgreSQL](https://www.postgresql.org/)
+
+- [Phoenix 1.4][phoenixframework]
+- [Bootstrap](https://getbootstrap.com)
+- [PostgreSQL](https://www.postgresql.org/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Prerequisites
+
 This project uses [Phoenix 1.4][phoenixframework], the web framework for the Elixir language.
 
 Please make sure to install [Phoenix and its dependencies](https://hexdocs.pm/phoenix/installation.html#content).
 
+The project uses [Docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/install/) for setting up a Postgres database.
+
+```bash
+docker -v
+> Docker version 19.03.11-ce
+```
+
+```bash
+docker-compose -v
+> docker-compose version 1.25.5
+```
 
 ### Installation
 
-  * Clone the repo
-  ```sh
-  git clone https:://github.com/sophiabrandt/mango.git
-  ```
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
+- Clone the repo
+
+```sh
+git clone https://github.com/sophiabrandt/mango.git
+```
+
+- Install dependencies with `mix deps.get`
+- Install Node.js dependencies with `cd assets && npm install`
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
-1. To start your Phoenix server:
+1. Start the Postgres database:
 
-```sh
-mix phx.server
-``````
+    ```bash
+    docker-compose up -d
+    ```
+    
+    Create and migrate your database:
+    ```bash
+    mix ecto.setup
+    ```
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-2. To run the tests:
+2. To start your Phoenix server:
 
-```sh
-phantomjs --wd
-```
-Then:
-```sh
-mix test
-```
+    ```bash
+    mix phx.server
+    ```
 
-3. Production
+    Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check the deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+3. To run the tests:
 
+    ```sh
+    phantomjs --wd
+    ```
+    
+    Then:
+    
+    ```sh
+    mix test
+    ```
+
+4. Production
+
+    Ready to run in production? Please [check the deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+- Official website: http://www.phoenixframework.org/
+- Guides: https://hexdocs.pm/phoenix/overview.html
+- Docs: https://hexdocs.pm/phoenix
+- Mailing list: http://groups.google.com/group/phoenix-talk
+- Source: https://github.com/phoenixframework/phoenix
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/sophiabrandt/mango/issues) for a list of proposed features (and known issues).
 
 <!-- LICENSE -->
+
 ## Licence
 
 All code is written by Shankar Dhanaksekaran.  
@@ -127,6 +157,7 @@ According to the [project's website][phoenixbook], the [original repo][shankarma
 See `LICENCE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Sophia Brandt - [@hisophiabrandt](https://twitter.com/hisophiabrandt)
@@ -134,14 +165,16 @@ Sophia Brandt - [@hisophiabrandt](https://twitter.com/hisophiabrandt)
 Project Link: [https://github.com/sophiabrandt/mango](https://github.com/sophiabrandt/mango)
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [Mastering Phoenix Framework][phoenixbook]
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [Best-README-Template](https://github.com/sophiabrandt/mango/)
 
+## Acknowledgements
+
+- [Mastering Phoenix Framework][phoenixbook]
+- [Img Shields](https://shields.io)
+- [Choose an Open Source License](https://choosealicense.com)
+- [Best-README-Template](https://github.com/sophiabrandt/mango/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [contributors-url]: https://github.com/sophiabrandt/mango/graphs/contributors
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
